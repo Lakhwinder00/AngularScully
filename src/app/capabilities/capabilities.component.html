@@ -1,0 +1,49 @@
+<div class="container">
+  <br />
+  <div class="row">
+    <div class="col-lg-8">
+      <h1 class="clr">{{headerName}}</h1><br />
+    </div>
+  </div>
+  
+  <div class="row col-lg-12 home-eng-box-left">
+    <div class="col-lg-4 home-eng-box" *ngFor="let item of executiveProductDelivery">
+      <div class="col-lg-1">
+        <img src="{{item.image}}" class="home-excutive-img" alt="Alternate Text" />
+      </div>
+      <div class="col-lg-2 home-excutive-word">
+        <h3 class="clr">{{item.name}}</h3>
+        <label class="clr" style="word-break: break-word;">{{item.detail}}</label>
+      </div>
+    </div>
+    <br />
+  </div>
+  <div class="row col-lg-12 home-eng-box2">
+    <div class="col-lg-1">
+      <img class="home-excutive-img" src="{{engineeringHeader.image}}" />
+    </div>
+    <div class="col-lg-10">
+      <h3 class="clr  home-eng-box2-text">{{engineeringHeader.name}}</h3>
+      <label class="clr" style="margin-left: -34px;">{{engineeringHeader.detail}}</label>
+    </div>
+    <div class="col-lg-3 capabilities-eng-skills-box1" *ngFor="let item of engineeringSkills">
+      <label class="clr" style="margin-top: 29px;"><img src="{{item.image}}" class="home-skills-img" /> {{item.name}}</label>
+    </div>
+  </div>
+  <div class="row" style="margin-top:10px">
+    <div class="col-lg-2 capabilities-eng-skills-box" *ngFor="let item of skillsNameWithImage">
+      <label class="clr" style="margin-top: 29px;"><img src="{{item.image}}" class="capabilities-icon" /> {{item.name}}</label>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-lg-4">
+
+    </div>
+    <div class="col-lg-4">
+
+    </div>
+    <div class="col-lg-4">
+
+    </div>
+  </div>
+</div>

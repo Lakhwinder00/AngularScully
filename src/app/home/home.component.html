@@ -1,0 +1,207 @@
+<!------------------------banner section Start ------------------------->
+<section class="banner">
+  <div class="container">
+    <!--	<h1 class="title">ONE-STOP </h1>-->
+
+    <h1 class="title" style="white-space: pre-line">{{headerName}}</h1>
+
+    <div class="para">
+      <p class="subline-para">
+        {{subHeader}}
+      </p>
+    </div>
+
+    <div class="slider-container">
+      <div class="slider-items" *ngFor="let item of IconImages">
+        <img src="{{item.image}}" alt="" />
+      </div>
+    </div>
+  </div>
+</section>
+<!------------------------banner section end ------------------------->
+<section class="about">
+  <div class="container">
+    <div class="service-box">
+      <div class="service-item" *ngFor="let item of executiveProductDelivery">
+        <div class="box">
+          <div class="left-box">
+            <img src="{{item.image}}" alt="" />
+          </div>
+
+          <div class="right-box">
+            <button class="tablinks"
+                    onclick="openCity(event, 'London')"
+                    id="defaultOpen">
+              {{item.name}}
+            </button>
+
+            <p class="box-para">
+              {{item.detail}}
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="tabcontent" id="London" style="display: block;">
+      <!-- Start London-->
+      <div class="box">
+        <div class="left-box">
+          <img src="{{engineeringHeader.image}}" alt="" />
+        </div>
+
+        <div class="right-box">
+          <h2 class="tablinks">{{engineeringHeader.name}}</h2>
+
+          <p class="box-para">
+            {{engineeringHeader.detail}}
+          </p>
+        </div>
+      </div>
+      <div class="card-box">
+        <div class="card-item">
+          <div class="card text-center">
+            <img class="icon-resize"
+                 src="{{engineeringSkills.image1}}"
+                 alt="" />
+
+            <h3 class="card-title">{{engineeringSkills.fontWeb}}</h3>
+          </div>
+        </div>
+
+        <div class="card-item">
+          <div class="card text-center">
+            <img class="icon-resize"
+                 src="{{engineeringSkills.image2}}"
+                 alt="" />
+
+            <h3 class="card-title">{{engineeringSkills.backendEng}}</h3>
+          </div>
+        </div>
+
+        <div class="card-item">
+          <div class="card text-center">
+            <img class="icon-resize"
+                 src="{{engineeringSkills.image3}}"
+                 alt="" />
+
+            <h3 class="card-title">{{engineeringSkills.dataEng}}</h3>
+          </div>
+        </div>
+
+        <div class="card-item">
+          <div class="card text-center">
+            <img class="icon-resize"
+                 src="{{engineeringSkills.image4}}"
+                 alt="" />
+
+            <h3 class="card-title">{{engineeringSkills.devOps}}</h3>
+          </div>
+        </div>
+
+        <div class="card-item">
+          <div class="card text-center">
+            <img class="icon-resize"
+                 src="{{engineeringSkills.image5}}"
+                 alt="" />
+
+            <h3 class="card-title">{{engineeringSkills.qa}}</h3>
+          </div>
+        </div>
+      </div>
+
+      <div class="card-box">
+        <div class="card-item">
+          <div class="card text-center">
+            <img class="icon-resize"
+                 src="{{engineeringSkills.image6}}"
+                 alt="" />
+
+            <h3 class="card-title">{{engineeringSkills.cloiudNative}}</h3>
+          </div>
+        </div>
+
+        <div class="card-item">
+          <div class="card text-center">
+            <img class="icon-resize"
+                 src="{{engineeringSkills.image7}}"
+                 alt="" />
+
+            <h3 class="card-title">{{engineeringSkills.projectManagement}}</h3>
+          </div>
+        </div>
+
+        <div class="card-item">
+          <div class="card text-center">
+            <img class="icon-resize"
+                 src="{{engineeringSkills.image8}}"
+                 alt="" />
+
+            <h3 class="card-title">{{engineeringSkills.productDesign}}</h3>
+          </div>
+        </div>
+
+        <div class="card-item">
+          <div class="card text-center">
+            <img class="icon-resize"
+                 src="{{engineeringSkills.image9}}"
+                 alt="" />
+
+            <h3 class="card-title">{{engineeringSkills.mobileDev}}</h3>
+          </div>
+        </div>
+
+        <div class="card-item">
+          <div class="card text-center">
+            <img class="icon-resize"
+                 src="{{engineeringSkills.image9}}"
+                 alt="" />
+
+            <h3 class="card-title">{{engineeringSkills.mobileDev}}</h3>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End London-->
+  </div>
+</section>
+<!------------------------service section end ------------------------->
+<section class="video">
+  <div class="container">
+    <h2 class="video-title">
+      Join <span>500+ companies </span>that have entrusted TechXL
+    </h2>
+    <div class="video-container">
+      <div class="video-items" *ngFor="let item of videoLink">
+        <div class="hovereffect">
+          <img class="img-responsive"
+               src="{{item.image}}"
+               alt="" />
+          <div class="overlay">
+            <video controls width="350">
+              <source src="{{item.link}}" type="video/mp4" />
+            </video>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="button text-center">
+      <a href="#" class="contact-btn"> Contact TechXL Today </a>
+    </div>
+  </div>
+</section>
+<section class="skills">
+  <div class="container">
+    <div class="all">
+      <div class="skill-con">
+        <div class="skill-list" *ngFor="let item of skillsName">
+          <div class="skill-box">
+            <div class="skill-card text-center">
+              <img src="{{item.image}}" alt="" />
+              <h3 class="skill-title">{{item.name}}</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

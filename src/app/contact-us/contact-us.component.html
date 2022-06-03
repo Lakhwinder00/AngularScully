@@ -1,0 +1,165 @@
+<header class="careers-header">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12">
+        <div class="header-intro">
+          <h2 class="title">{{contactUsHeader}}</h2>
+          <p>{{contactUsDescription}}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+<div class="careers-form-wrap">
+  <section class="parent-flex">
+    <div class="info">
+      <h1>{{contactUsHeader}}</h1>
+      <div class="form-intro">
+        <h1>{{contactUsDescription}}</h1>
+        <p>See our <a href="/careers">{{currentOpenings}}</a></p>
+      </div>
+      <div class="item parent-flex">
+        <div class="context">
+          <h2>{{contactHighPerformance}}</h2>
+        </div>
+        <div class="img"><img src="https://www.ardanlabs.com/my/static/media/icons-stats-grey.242d89a4.svg" alt="Ardan Labs Statistics"></div>
+      </div>
+      <div class="comp-trust">
+        <p>Trusted by</p>
+        <img src="https://www.ardanlabs.com/my/static/media/grey-logo-group.85b4cca8.svg" alt="Ardan Labs Trusted Companies">
+      </div>
+    </div>
+    <div class="careers-form" id="careers-form-link">
+      <div class="form-box career-table">
+        <form [formGroup]="contactUsForm" (ngSubmit)="onSubmit()" class="form">
+          <div class="form-body">
+            <div class="row">
+              <!--<div class="col-md-12">
+                <div class="hidden" role="alert">
+                  <h3>{{contactThanks}}</h3>
+                </div>
+              </div>-->
+              <div class="col-md-12">
+                <div></div>
+                <div class="careers-flex">
+                  <div class="form-group flex-half-width">
+                    <label class="pull-left required">{{name}}:</label>
+                    <input type="text" class="form-control" name="name" id="name" formControlName="name" placeholder="Enter name" [ngClass]="{ 'is-invalid': submitted && f.name.errors}">
+                    <div *ngIf="submitted && f.name.errors" class="invalid-feedback">
+                      <div *ngIf="f.name.errors?.required">Field is required</div>
+                    </div>
+                  </div>
+                  <div class="form-group flex-half-width">
+                    <label class="pull-left required">{{email}}:</label>
+                    <input type="text" class="form-control" id="email" name="email" formControlName="name" placeholder="example@email.com" [ngClass]="{ 'is-invalid': submitted && f.email.errors}">
+                    <div *ngIf="submitted && f.email.errors" class="invalid-feedback">
+                      <div *ngIf="f.email.errors?.required">Field is required</div>
+                    </div>
+                  </div>
+                  <div class="form-group flex-half-width">
+                    <label class="pull-left">{{region}}</label>
+                    <select type="select" class="form-control" name="region" formControlName="region" [ngClass]="{ 'is-invalid': submitted && f.region.errors}">
+                      <option *ngFor="let item of regionList" value="{{item.value}}">{{item.text}}</option>
+                    </select>
+                    <div *ngIf="submitted && f.region.errors" class="invalid-feedback">
+                      <div *ngIf="f.region.errors?.required">Field is required</div>
+                    </div>
+                  </div>
+                  <div class="form-group flex-half-width" style="margin-top:17px;">
+                    <label class="pull-left required">{{answer}}</label>
+                    <input type="text" class="form-control" name="answer" placeholder="Your answer" formControlName="answer" [ngClass]="{ 'is-invalid': submitted && f.answer.errors}">
+                    <div *ngIf="submitted && f.answer.errors" class="invalid-feedback">
+                      <div *ngIf="f.answer.errors?.required">Field is required</div>
+                    </div>
+                  </div>
+                  <div class="form-group flex-half-width">
+                    <label class="pull-left">{{salary}}</label>
+                    <input type="text" class="form-control" name="salary" placeholder="Your answer" formControlName="salary" [ngClass]="{ 'is-invalid': submitted && f.salary.errors}">
+                    <div *ngIf="submitted && f.salary.errors" class="invalid-feedback">
+                      <div *ngIf="f.salary.errors?.required">Field is required</div>
+                    </div>
+                  </div>
+                  <div class="form-group flex-half-width">
+                    <label class="pull-left required">{{experience}}</label>
+                    <select type="select" class="form-control" name="experience" formControlName="experience" [ngClass]="{ 'is-invalid': submitted && f.experience.errors}">
+                      <option *ngFor="let item of expList" value="{{item.value}}">{{item.text}}</option>
+                    </select>
+                    <div *ngIf="submitted && f.experience.errors" class="invalid-feedback">
+                      <div *ngIf="f.experience.errors?.required">Field is required</div>
+                    </div>
+                  </div>
+                  <div class="form-group flex-full-width ">
+                    <label class="pull-left">{{labConsider}}</label>
+                    <textarea type="text" class="form-control" rows="5" name="labConsider" formControlName="labConsider" placeholder="Your answer" [ngClass]="{ 'is-invalid': submitted && f.experience.errors}"></textarea>
+                    <div *ngIf="submitted && f.experience.errors" class="invalid-feedback">
+                      <div *ngIf="f.experience.errors?.required">Field is required</div>
+                    </div>
+                  </div>
+                  <div class="form-group flex-full-width">
+                    <label class="pull-left">{{biginnereExperience}}</label><label></label>
+                    <select multiple="" type="select" class="form-control" name="biginnereExperience" formControlName="biginnereExperience" placeholder="Skills with beginner experience" [ngClass]="{ 'is-invalid': submitted && f.biginnereExperience.errors}">
+                      <option *ngFor="let item of skillsList" value="item.value">{{item.text}}</option>
+                    </select>
+                    <div *ngIf="submitted && f.biginnereExperience.errors" class="invalid-feedback">
+                      <div *ngIf="f.biginnereExperience.errors?.required">Field is required</div>
+                    </div>
+                    <div class="pull-left" style="margin-top: 15px;"></div>
+                  </div>
+                  <div class="form-group flex-full-width">
+                    <label class="pull-left">{{intermediatExperience}}</label><label></label>
+                    <select multiple="" type="select" class="form-control" name="intermediatExperience" formControlName="intermediatExperience" placeholder="Skills with intermediate experience" [ngClass]="{ 'is-invalid': submitted && f.intermediatExperience.errors}">
+                      <option *ngFor="let item of skillsList" value="alertManager">{{item.item}}</option>
+                    </select>
+                    <div *ngIf="submitted && f.intermediatExperience.errors" class="invalid-feedback">
+                      <div *ngIf="f.intermediatExperience.errors?.required">Field is required</div>
+                    </div>
+                    <div class="pull-left" style="margin-top: 15px;"></div>
+                  </div>
+                  <div class="form-group flex-full-width">
+                    <label class="pull-left">{{expertExperience}}</label><label></label>
+                    <select multiple="" type="select" class="form-control" name="expertExperience" formControlName="expertExperience" placeholder="Skills with expert experience" [ngClass]="{ 'is-invalid': submitted && f.intermediatExperience.errors}">
+                      <option *ngFor="let item of skillsList" value="{{item.value}}">{{item.text}}</option>
+                    </select>
+                    <div *ngIf="submitted && f.intermediatExperience.errors" class="invalid-feedback">
+                      <div *ngIf="f.intermediatExperience.errors?.required">Field is required</div>
+                    </div>
+                    <div class="pull-left" style="margin-top: 15px;"></div>
+                  </div>
+                  <div class="flex-full-width ">
+
+                    <div class="dropzone">
+                      <div class="dropzone-box" aria-disabled="false" style="position: relative;">
+                        <span class="dropzone-area false">
+                          <span class="dropzone-img">
+                            <label class="required">Drag and drop your resume.</label>
+                            <p>Or click to choose your file</p>
+                          </span>
+                        </span>
+                        <input type="file" multiple="" autocomplete="off" style="position: absolute; inset: 0px; opacity: 1e-05; pointer-events: none;">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="clearfix"></div>
+              <div class="flex-full-width ">
+                <div class="modal-footer"><input type="submit" class="btn btn-default submit-btn" value="APPLY TO ARDAN LABS"></div>
+              </div>
+            </div>
+            <div class="ft-flex-reach-us">
+              <h5>Contact Information </h5>
+              <p><i class="fa fa-phone"></i>{{contactInfo}}<br><span>{{contactPh1}}</span></p>
+              <p><a href="mailto:hello@ardanlabs.com"><i class="fa fa-envelope"></i> hello@ardanlabs.com</a></p>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+</div>
+<section class="call-to-action">
+  <h3 class="clr">Let’s start a conversation</h3>
+  <p class="clr"> Reach out and let us know what you are interested in.</p>
+  <a href="/my/contact-us"><i class="fa fa-comments-o" aria-hidden="true"></i> Let's Talk </a>
+</section>
+

@@ -1,0 +1,43 @@
+<div class="container">
+  <br />
+  <div class="row">
+    <div class="col-lg-2"></div>
+    <div class="col-lg-8">
+      <h2 class="clr">{{headerName}}</h2><br />
+      <h5 class="clr">{{this.subHeader}}</h5>
+    </div>
+  </div>
+  <br />
+  <div class="margin-top-cls row">
+    <div class="col-lg-2"></div>
+    <div class="col-lg-8">
+      <input type="text" class="form-control" placeholder="Search" />
+    </div>
+  </div>
+  <div class="margin-top-cls row">
+    <div class="col-lg-2"></div>
+    <div class="col-lg-4">
+      <select class="form-control"><option *ngFor="let item of expertise" value="{{item.value}}">{{item.text}}</option></select>
+    </div>
+    <div class="col-lg-4">
+      <select class="form-control"><option *ngFor="let item of role" value="{{item.value}}">{{item.text}}</option></select>
+    </div>
+  </div><br /><br />
+  <div class="row col-lg-12 list">
+    <div class="col-lg-2" *ngFor="let item of peopleImagesList" style="margin-right: 2px;">
+      <img src="{{item.image}}" alt="..." class="img-thumbnail thumb-image-height"><br />
+      <h5 class="clr" style="font:bold">{{item.name}}</h5>
+      <label class="clr">{{item.detail}}</label>
+    </div>
+  </div>
+  <div class="row margin-top-cls">
+    <div class="row">
+      <div class="col-4"></div>
+      <div class="col-4">
+        <button class="btn loadmor-button ">Load More</button>
+      </div>
+      <div class="col-4"></div>
+    </div>
+  </div>
+</div>
+

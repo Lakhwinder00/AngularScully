@@ -1,0 +1,383 @@
+.careers-form-wrap {
+  background: url(/my/static/media/contact-background02.645778f3.svg);
+  background-position: 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 110px 5% 80px;
+}
+
+header.careers-header {
+  background-color: #2b30ba;
+  background-size: cover;
+  display: none;
+  height: 350px;
+  margin-bottom: 0;
+  padding: 100px;
+  text-align: center;
+  width: auto;
+}
+
+.careers-form-wrap {
+  background: url(https://www.ardanlabs.com/my/static/media/contact-background02.645778f3.svg);
+  background-position: 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 110px 5% 80px;
+}
+
+.parent-flex {
+  align-items: flex-start;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  text-align: center;
+  margin-top: -80px
+}
+
+section {
+  padding: 0 0 30px;
+}
+
+element.style {
+}
+
+.careers-form-wrap .info {
+  color: #646486;
+  flex: 1 0;
+  margin-right: 40px;
+  order: 1;
+}
+
+.careers-form-wrap .careers-form, .careers-form-wrap form {
+  flex: 1 0;
+  order: 2;
+}
+
+.careers-form {
+  position: relative;
+}
+
+section.call-to-action {
+  background: url(/my/static/media/cta-bg.0ca0d6f1.jpg);
+  background-position: 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 315px;
+  padding: 60px;
+  text-align: center;
+  width: auto;
+}
+
+.careers-form .form-body {
+  padding: 30px 5%;
+}
+
+.careers-form-wrap .form-body {
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 1px 15px rgb(52 73 94 / 20%);
+  flex: 1 0;
+  margin-top: 30px;
+  padding: 8% 10%;
+  width: 100%;
+}
+
+.row {
+  margin-right: -15px;
+  margin-left: -15px;
+}
+
+@media (min-width: 992px) {
+  .col-md-12 {
+    width: 100%;
+  }
+}
+
+.careers-form .form-body .careers-flex .form-group.flex-half-width:nth-child(8), .careers-form .form-body .careers-flex .form-group.flex-half-width:nth-child(odd) {
+  padding: 0 10px 0 0;
+}
+
+.careers-form .form-body .careers-flex .flex-half-width {
+  flex: 1 1 50%;
+  max-width: 50%;
+}
+
+.careers-form .form-body .careers-flex .flex-full-width {
+  flex: 1 1 100%;
+}
+
+.form-control[_ngcontent-fdi-c17], output[_ngcontent-fdi-c17] {
+  display: block;
+  font-size: 14px;
+  line-height: 1.42857143;
+  color: #555;
+}
+
+select[multiple], select[size] {
+  height: auto;
+}
+
+.careers-form[_ngcontent-vol-c17] .form-body[_ngcontent-vol-c17] .careers-flex[_ngcontent-vol-c17] {
+  align-items: flex-start;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  text-align: center;
+}
+
+.dropzone-box .dropzone-area.false {
+  border: 2px solid #dce4ec;
+}
+
+.dropzone-box .dropzone-area {
+  background: #fff !important;
+  border-width: 2px;
+  display: inline-block;
+  flex-grow: 1;
+  margin: 0;
+  padding: 20px;
+  position: relative;
+}
+
+.dropzone-box {
+  cursor: pointer;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.dropzone-box .dropzone-area.false .dropzone-img label {
+  margin-left: 25%;
+  margin-top: 4%;
+}
+
+.dropzone-box .dropzone-area.false .dropzone-img p {
+  margin-left: 25%;
+}
+
+.form-body label {
+  font-size: 22px;
+  font-weight: 400;
+}
+
+.dropzone-box .dropzone-area.false .dropzone-img {
+  background: url(https://www.ardanlabs.com/my/static/media/dropzone-empty.2b7c7881.svg) no-repeat;
+  background-position: 1px;
+  background-size: 18%;
+  display: block;
+  height: 100px;
+  margin: 0 auto;
+  text-align: left;
+  width: 400px;
+}
+
+.container {
+  max-width: 1180px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 20px;
+  padding-right: 20px;
+  width: 100%;
+}
+
+.careers-form .form-body .careers-flex .form-group {
+  margin-bottom: 10px;
+}
+
+.careers-form .form-group label {
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 6px;
+  text-transform: uppercase;
+}
+
+.form-control {
+  -webkit-transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+  background-color: #fff;
+  background-image: none;
+  border: 1px solid #dce4ec;
+  border-radius: 4px;
+  box-shadow: inset 0 1px 1px rgb(26 36 47 / 8%);
+  color: #0c1543;
+  display: block;
+  font-size: 16px;
+  height: 43px;
+  padding: 2px 10px;
+  transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+  width: 100%;
+}
+
+.form-control, output {
+  display: block;
+  font-size: 14px;
+  line-height: 1.42857143;
+  color: #555;
+}
+
+.careers-form .form-body textarea {
+  height: 200px;
+  resize: vertical;
+}
+
+.careers-form .form-body .careers-flex {
+  align-items: flex-start;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  text-align: center;
+}
+
+.careers-form-wrap .info .form-intro {
+  margin-bottom: 30px;
+}
+
+.careers-form-wrap .info {
+  color: #646486;
+  flex: 1 0;
+  margin-right: 40px;
+  order: 1;
+}
+
+.careers-form-wrap .info .item {
+  align-items: center;
+  margin: 10px 0;
+  padding: 10px 0;
+}
+
+.careers-form-wrap .info .comp-trust {
+  margin-top: 40px;
+  padding: 24px 0 0;
+  text-align: center;
+}
+
+.careers-form-wrap .info .item .context {
+  color: #646486;
+}
+
+header.careers-header .container {
+  padding: 0;
+}
+
+section.call-to-action {
+  background: url(https://www.ardanlabs.com/my/static/media/cta-bg.0ca0d6f1.jpg);
+  background-position: 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 315px;
+  padding: 60px;
+  text-align: center;
+  width: auto;
+}
+
+section.call-to-action a {
+  background: #e3430e;
+  border: 0;
+  border-radius: 0;
+  color: #fff;
+  font-size: 16px !important;
+  font-weight: 600 !important;
+  margin: 0 10px;
+  padding: 10px;
+  text-transform: uppercase;
+}
+
+a {
+  color: #e3430e;
+  text-decoration: none;
+}
+
+.careers-form-wrap .ft-flex-reach-us p {
+  font-size: 15px;
+}
+
+.careers-form-wrap .ft-flex-reach-us {
+  border-top: 2px solid #d3d7e5;
+  color: #646486;
+  margin-top: 20px;
+}
+
+.careers-form .submit-btn {
+  display: block;
+  margin: 0 auto;
+}
+
+.modal-footer {
+  border-top: 0;
+  padding: 15px 0;
+  text-align: left;
+}
+
+.btn-default {
+  -moz-transition: all .15s ease-in-out;
+  -webkit-transition: all .15s ease-in-out;
+  background: #e3430e;
+  border: 0;
+  border-radius: 0;
+  color: #fff;
+  font-weight: 600;
+  text-transform: uppercase;
+  transition: all .15s ease-in-out;
+}
+
+.careers-form-wrap .info h1 {
+  font-size: 64px;
+  margin-bottom: 20px;
+}
+
+.careers-form-wrap .info .form-intro h1 {
+  font-size: 22px;
+  margin-bottom: 10px;
+  margin-top: 30px;
+}
+
+p {
+  font-size: 18px;
+  font-weight: 400;
+  letter-spacing: 1px;
+  line-height: 1.5;
+  margin-bottom: 1em;
+}
+
+.careers-form-wrap .info .item .context {
+  color: #646486;
+}
+
+.careers-form-wrap .info .item .context h2 {
+  font-size: 25px;
+  font-weight: 600;
+  line-height: 1.2em;
+  margin-bottom: 20px;
+  padding: 0 90px;
+  text-align: center;
+}
+
+section h2 {
+  font-family: Montserrat,helvetica neue,Helvetica,Arial,sans-serif;
+  font-size: 30px;
+  font-weight: 400;
+  margin: 0;
+  text-transform: uppercase !important;
+}
+
+img {
+  vertical-align: middle;
+}
+
+img {
+  border-style: none;
+}
+
+.clr {
+  color: white;
+}
+input.ng-dirty.ng-invalid {
+  color: red
+}
+.form-control {
+  border: 1px solid #c2c4c6!important;
+}
+label{
+    color:black
+}
+.invalid-feedback{
+    color:red!important;
+}
